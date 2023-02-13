@@ -10,10 +10,5 @@ public class WebConfig implements WebMvcConfigurer {
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/images/**")
 		.addResourceLocations("file:///usr/local/project/product_images/");
-		
-		//upload 폴더 경로 설정(동일한 이름 /images 사용)
-		
-		registry.addResourceHandler("/audio/**")
-		.addResourceLocations("file:///C:/springWorkspace/upload/");
 	}
 }
